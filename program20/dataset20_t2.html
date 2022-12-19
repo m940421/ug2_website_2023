@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--  
+    Document Title
+    =============================================
+  -->
+  <title>UG2+ Challenge</title>
+    <!--  
+    Favicons
+    =============================================
+  -->
+  <link rel="apple-touch-icon" sizes="57x57" href="assets/images/favicons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="assets/images/favicons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="assets/images/favicons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="assets/images/favicons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="assets/images/favicons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="assets/images/favicons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="assets/images/favicons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="assets/images/favicons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/images/favicons/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="assets/images/favicons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicons/favicon-16x16.png">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="assets/images/favicons/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+    <!--  
+    Stylesheets
+    =============================================
+    
+  -->
+  <!-- Default stylesheets-->
+  <link href="assets/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Template specific stylesheets-->
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Volkhov:400i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+  <link href="assets/lib/animate.css/animate.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link href="assets/lib/et-line-font/et-line-font.css" rel="stylesheet">
+  <link href="assets/lib/flexslider/flexslider.css" rel="stylesheet">
+  <link href="assets/lib/owl.carousel/dist/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="assets/lib/owl.carousel/dist/assets/owl.theme.default.min.css" rel="stylesheet">
+  <link href="assets/lib/magnific-popup/dist/magnific-popup.css" rel="stylesheet">
+  <link href="assets/lib/simple-text-rotator/simpletextrotator.css" rel="stylesheet">
+  <!-- Main stylesheet and color file-->
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link id="color-scheme" href="assets/css/colors/default.css" rel="stylesheet">
+</head>
+<body data-spy="scroll" data-target=".onpage-navigation" data-offset="60">
+  <a id="ddmenuLink" href="menu_transparent.html">Menu</a>
+  <main>
+    <div class="page-loader">
+      <div class="loader">Loading...</div>
+    </div>
+
+    <div class="main">
+      <section class="module bg-dark-30 portfolio-page-header" data-background="assets/images/t2bg.jpg" style="padding: 30px 0;">
+        <div class="container" style="width:100%">
+          <div class="row"  style="padding: 40px 40px 0px 40px">
+            <div class="col-sm-6 col-sm-offset-3">
+              <h2 class="module-title font-alt" style="margin: 0 0 20px">Challenge 2 (FlatCam) Datasets</h2>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="module" style="padding: 30px 0;" id='track2'>
+        <div class="container" >
+          <div class="row">
+            <h3 class="module-title font-alt align-left" style="margin-bottom: 40px"><span class="fas fa-cloud-sun-rain"></span> Track 2: FlatCam for Faces</h3>
+            <div class="col-sm-12 col-md-12 col-lg-12">
+              <div class="work-details">
+                <h4 class="work-details-title font-alt">About the Dataset</h4>
+                <p>We provide two types of data for Challenge 2.
+                  For each type of data, we provide both FlatCam sensor measurements, as well as FlatCam Tikhonov reconstructions.
+                  You need not use all data for an individual subchallenge, and some data may be more appropriate for some subchallenges than others.
+                  We do not explicitly split the data into training and validation sets and leave that to the participant.
+                </p>
+                <p>The first type of data is the <b>FlatCam Face Dataset (FCFD)</b>, a dataset of 87 subjects captured with a FlatCam prototype in a variety of conditions.
+                  The test dataset for all subchallenges is composed of images captured in the same manner as the FCFD (but with different subjects).
+                  Thus, the FCFD is the closest resemblance to the challenge's test images.</p>
+                <p><ul><li>The second type of data is <b>display-captured FlatCam images</b>.
+                  These are images captured by the FlatCam prototype of a computer monitor displaying images from popular datasets.
+                  While they are not captures of real scenes, the original images displayed on the monitor provide corresponding ground truth images.</li></ul></p>
+                <h5 class="work-details-title font-alt">Training & Evaluation</h5>
+                <p>In all three sub-challenges, the participant teams are allowed to use external training data that are not mentioned above, including self-synthesized or self-collected data; but they must state so in their submissions.</p>
+
+                <h4 class="work-details-title font-alt" id='subchallenge1'>FlatCam Face Dataset (FCFD)</h4>
+                <p>The FCFD can be obtained via this <a href="http://computationalimaging.rice.edu/databases/flatcam-face-dataset/">LINK</a>.</p>
+
+                <h4 class="work-details-title font-alt" style="padding-top: 30px" id='subchallenge2'>Display-captured CASIA Dataset</h4>
+                <p>A subset of the CASIA-WebFace dataset [1] containing ~380,000 images of different face identities (organized into different subfolders). Note that not all the original CASIA images were display-captured by the FlatCam.</p>
+                <ul style="padding-left: 20px">
+                  <li><strong>Original Images: </strong><span class="font-serif"><a href="https://drive.google.com/a/rice.edu/file/d/1kB0CSzRx16InEdRQlWfz8WbSSINxdA7O/view?usp=sharing">LINK</a></span></li>
+                  <li><strong>FlatCam Measurements (choose one of the following two options): </strong>
+                    <br>&nbsp;&nbsp;&nbsp;Option 1 -- Whole dataset (792 GB): <span class="font-serif"><a href="https://drive.google.com/a/rice.edu/file/d/1ayYKFXili1Bw34E_kR5gF3AKahG4TaSW/view?usp=sharing">LINK</a></span>
+                    <br>&nbsp;&nbsp;&nbsp;Option 2 -- Whole dataset split into smaller files:
+                    <ul style="padding-left: 60px">
+                      <li>File 1 (138 GB) <span class="font-serif"><a href="https://drive.google.com/a/rice.edu/file/d/12JFylw_wM6kxFkG45j05VQlwMWKGhlkf/view?usp=sharing">LINK</a></span></li>
+                      <li>File 2 (93 GB) <span class="font-serif"><a href="https://drive.google.com/a/rice.edu/file/d/1TuUnDFj9sQnOj7jmx6FywPWMfRvgRJiJ/view?usp=sharing">LINK</a></span></li>
+                      <li>File 3 (83 GB) <span class="font-serif"><a href="https://drive.google.com/a/rice.edu/file/d/1AdrObH5hnCgR4ggYlS2jIO8QoQFU6diT/view?usp=sharing">LINK</a></span></li>
+                      <li>File 4 (80 GB) <span class="font-serif"><a href="https://drive.google.com/a/rice.edu/file/d/1aPm8MSj8__kptc7GS5EGJBnmtWal-VuF/view?usp=sharing">LINK</a></span></li>
+                      <li>File 5 (77 GB) <span class="font-serif"><a href="https://drive.google.com/a/rice.edu/file/d/10W2PoW69XOJXDzaOKR3Xx8J8wj3_o-S4/view?usp=sharing">LINK</a></span></li>
+                      <li>File 6 (70 GB) <span class="font-serif"><a href="https://drive.google.com/a/rice.edu/file/d/19o_OwBDPrNhoccbc-2EaOewWNTeymcQN/view?usp=sharing">LINK</a></span></li>
+                      <li>File 7 (67 GB) <span class="font-serif"><a href="https://drive.google.com/a/rice.edu/file/d/1xtwnMIHXnVfwHZIaxqT6zAVhZd5YXLTN/view?usp=sharing">LINK</a></span></li>
+                      <li>File 8 (55 GB) <span class="font-serif"><a href="https://drive.google.com/a/rice.edu/file/d/1WITyDgk9NWLvSDJat8a01ljtOklEcK3h/view?usp=sharing">LINK</a></span></li>
+                      <li>File 9 (55 GB) <span class="font-serif"><a href="https://drive.google.com/a/rice.edu/file/d/1N7m2gfIBJPDN5EZ6KEjaEnVoVly4EMwe/view?usp=sharing">LINK</a></span></li>
+                      <li>File 10 (49 GB) <span class="font-serif"><a href="https://drive.google.com/a/rice.edu/file/d/1GZZsZMXz7zoHgLSCjwGI4As1airpOntT/view?usp=sharing">LINK</a></span></li>
+                      <li>File 11 (24 GB) <span class="font-serif"><a href="https://drive.google.com/a/rice.edu/file/d/1EaIQsxP24wPEWq4vhdkwuWuKHKNR-pNC/view?usp=sharing">LINK</a></span></li>
+                    </ul>
+                  </li>
+                  <li><strong>Tikhonov Reconstructions (30 GB): </strong><span class="font-serif"><a href="https://drive.google.com/a/rice.edu/file/d/1Oh1yuVZzzgwZWOShe_2aWgcCmI9WFwGL/view?usp=sharing">LINK</a></span>
+                  </li>
+                  <li><strong>Filenames (only those that were display-captured): </strong><span class="font-serif"><a href="https://drive.google.com/a/rice.edu/file/d/1e-HfoPd1K7qSd3Zb_rfte6v-yrl8HY9T/view?usp=sharing">LINK</a></span>
+                  </li>
+                </ul>
+                <p>Reference [1]: D. Yi, Z. Lei, S. Liao, and S. Z. Li, "Learning face representation from scratch," arXiv preprint arXiv:1411.7923, 2014.</p>
+
+                <h4 class="work-details-title font-alt" style="padding-top: 30px" id='subchallenge2'>Display-captured WIDER Dataset</h4>
+                <p>A subset of the WIDER Face dataset [2] containing various crops of the dataset's images captured by the FlatCam. Bounding box information is also provided.</p>
+                <ul style="padding-left: 20px">
+                  <li><strong>Original Images: </strong><span class="font-serif"><a href="https://drive.google.com/a/rice.edu/file/d/1MzloViQyHIOeaDzMgkN97swUJkDbjGTd/view?usp=sharing">LINK</a></span></li>
+                  <li><strong>FlatCam Measurements (28 GB): </strong><span class="font-serif"><a href="https://drive.google.com/a/rice.edu/file/d/1Xlmyc9WfGQpPlljxztK8AJXP-KODqMGS/view?usp=sharing">LINK</a></span>
+                  </li>
+                  <li><strong>Tikhonov Reconstructions (1 GB): </strong><span class="font-serif"><a href="https://drive.google.com/a/rice.edu/file/d/1TZRAPxkbTocpo2aMPaHY3jhrGeb2niub/view?usp=sharing">LINK</a></span>
+                  </li>
+                  <li><strong>Original Images Bounding Boxes (xywh format): </strong><span class="font-serif"><a href="https://drive.google.com/a/rice.edu/file/d/1iuGnlLOh7eweWKvN1DI5K3bh6yaphaat/view?usp=sharing">LINK</a></span></li>
+                  <li><strong>Tikhonov Reconstruction Bounding Boxes (xywh format): </strong><span class="font-serif"><a href="https://drive.google.com/a/rice.edu/file/d/1h8GEOV8pmzikzRfl165iflXALXaaK612/view?usp=sharing">LINK</a></span>
+                  </li>
+                  <li><strong>Filenames: </strong><span class="font-serif"><a href="https://drive.google.com/a/rice.edu/file/d/1fudE9sJBhFcVOtQT4_Wjx02brFKh4r8I/view?usp=sharing">LINK</a></span></li>
+                </ul>
+                <p>Reference [2]: S. Yang, P. Luo, C. C. Loy, and X. Tang, “Wider face: A face detection benchmark,” in Proc. IEEE Conf. Comput. Vision Pattern Recognition, 2016.</p>
+                <p style="text-align: justify;">If you have any questions about this challenge track please feel free to email <a style="color: #337ab7; text-decoration: underline" href="mailto:cvpr2020.ug2challenge.track2@gmail.com">cvpr2020.ug2challenge.track2@gmail.com</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <a id="ddfooterLink" href="footer.html">Footer</a>
+      <div class="scroll-up"><a href="#totop"><i class="fa fa-angle-double-up"></i></a></div>
+    </main>
+    <!--  
+    JavaScripts
+    =============================================
+    -->
+    <script src="assets/lib/jquery/dist/jquery.js"></script>
+    <script src="assets/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="assets/lib/wow/dist/wow.js"></script>
+    <script src="assets/lib/jquery.mb.ytplayer/dist/jquery.mb.YTPlayer.js"></script>
+    <script src="assets/lib/isotope/dist/isotope.pkgd.js"></script>
+    <script src="assets/lib/imagesloaded/imagesloaded.pkgd.js"></script>
+    <!-- <script src="assets/lib/flexslider/jquery.flexslider.js"></script> -->
+    <script src="assets/lib/owl.carousel/dist/owl.carousel.min.js"></script>
+    <!-- <script src="assets/lib/smoothscroll.js"></script> -->
+    <script src="assets/lib/magnific-popup/dist/jquery.magnific-popup.js"></script>
+    <script src="assets/lib/simple-text-rotator/jquery.simple-text-rotator.min.js"></script>
+    <script src="assets/js/plugins.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/ddmenu.js" type="text/javascript"></script>
+    <script src="assets/js/ddfooter.js" type="text/javascript"></script>
+  </body>
+</html>
