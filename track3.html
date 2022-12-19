@@ -53,6 +53,24 @@
   <link href="assets/css/style.css" rel="stylesheet">
   <link id="color-scheme" href="assets/css/colors/default.css" rel="stylesheet">
 </head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 24.0%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
 <body data-spy="scroll" data-target=".onpage-navigation" data-offset="60">
   <a id="ddmenuLink" href="menu_transparent.html">Menu</a>
   <main>
@@ -66,7 +84,8 @@
         <div class="container" style="width:100%">
           <div class="row" style="padding-top: 40px">
             <div class="col-sm-6 col-sm-offset-3">
-              <h2 class="module-title font-alt" style="margin: 0 0 0px">Track 3: Atmospheric Turbulence Mitigation</h2>
+              <p style="float: right;"><img height="300" width="300" src="pics/smoke_generator.png"></p>
+              <h2 class="module-title font-alt" style="margin: 0 0 0px">Track 1: Object Detection in Haze</h2>
               <h3 class="module-subtitle font-serif" style="margin: 0 0 20px"><a href="https://forms.gle/Td6DQuAJuuoLptN58" target="_blank" class="section-scroll btn btn-border-w btn-round">Register for this track</a></h3>
             </div>
           </div>
@@ -74,38 +93,50 @@
       </section>
 
       <section class="module-medium" style="padding-bottom: 0px">
-
-        <!-- <div class="container" style="font-size: 30px; padding-bottom: 20px">
-          Link to the final submission form was sent via email. If you did not receive it, please email cvpr2020.ug2challenge.track2@gmail.com
-        </div> -->
-        <!-- Turbulence Figure -->
-        <div class="container" style="padding-bottom: 20px">
-            <figure>
-              <img src="assets/images/turbulence_text_sample.png" style="width:75%;height:75%;margin-left:auto;margin-right:auto;display:block;border: none;">
-              <figcaption style="width:80%;margin-left:auto;margin-right:auto;display:block">
-                <em>Sampled frames from the turbulence text dataset. </em></figcaption>
-            </figure>
-        </div>
-
-        <!-- Text -->
         <div class="container">
           <div class="row" style="text-align: justify">
             <div class="col-sm-12 font-nat" style="font-size: 13pt">
-              <!-- <p><b><i>Registration form: <span class="font-serif"><a href="https://forms.gle/hQueBuMmfDx182EH9"> LINK</a></span></i></b></p>  -->
-              <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/OMSXK7f0V6M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
-              <p>Imaging in environments which degrade the quality of an image sets a hard constraint on where our computer vision algorithms are effectively applied. Often, an image domain model for these situations is utilized with great success; points of interest are used to estimate the global motion blur which can be fed into a deblurring framework, or a patch matching scheme can be used to effectively denoise the image. More recently, large amounts of data, typically in the form of input-output pairs, can be used to train a complex network to remove effects which are difficult to model in the image domain. In spite of these successes, there remain real world scenarios in which neither of the previous methodologies are feasible. Imaging over long distances through the atmosphere presents such a problem; there is no image domain model, and there is no way to acquire realistic input-output pairs without use of wave-propagation simulation which is not scalable for the purposes of generating a large scale dataset for training. This leaves us with the problem of incorporating the image formation problem in novel ways within our pipeline, which has yet to be developed. </p>
-              <p>The theories of turbulence and propagation of light through random media have been studied for the better part of a century. Yet progress for associated image reconstruction algorithms has been slow, as the turbulence mitigation problem has not thoroughly been given the modern treatments of advanced image processing approaches (e.g., deep learning methods) that have positively impacted a wide variety of other imaging domains (e.g., classification). This is due, in part, to the lack of standardization in testing procedures and limited simulation tools. Many simulation approaches are either accurate and relatively slow and often not open source, or rely on too simple of a model that will not generalize well to real-world sequences. To add to the difficulty of data generation, obtaining real-world sequences true to reality is challenging and the difficulty of obtaining the ground truth for image reconstruction precludes the use of objective quality metrics. Some approaches bypass this difficulty using the so-called "hot-air" sequences, though the general validity of such sequences is subject to debate. Furthermore, when testing on data obtained in a real-world setting, the lack of a large set of standardized testing sequences and quality evaluation metrics leaves the analysis insufficient and circumstantial. </p>  
-              <p>UG<sup>2</sup>+ Challenge 3 aims to promote the development of new image reconstruction algorithms for imaging through atmospheric turbulence. The participants will be asked to develop image reconstruction algorithms that targets at arbitary generic images. A state-of-the-art atmospheric turbulence simulator will be provided for the participants to generate training data. Data from other sources are also allowed to be used, but must be clearly stated in the final submissions. The submitted algorithms will be evaluated with two different dataset: </p>
-<ol>
-<li> The turbulence text dataset: This dataset contains text patterns collected during hot weather from 300 meters away. The final ranking of the challenge will be based on the average accuracy of three existing scene text recognition algorithms on the reconstruction result of this dataset. </li>
-<li> The hot-air dataset: This dataset contains generic turbulence/clean image pairs collected through heated air but over a much shorter distance. The purpose of this dataset is to encourage the participants to develop algorithms for generic scenes. In order to be considered in the final ranking, the <b>same model</b> used for processing dataset 1 must has performance (PSNR) better than a threshold (to be set) on dataset 2. </li>
-</ol>
+              <p>Scene understanding for applications such as intelligence, surveillance, and reconnaissance (ISR) and autonomous vehicles becomes extremely challenging in adverse weather conditions such as haze, fog and mist. These atmospheric phenomena with smoke particles and minute water droplets often result in imagery with non-linear noise, blur, reduced contrast levels and color dimming issues. Thus, the on-board vision systems are significantly obscured. These visual artifacts generated from uncontrolled and potentially changing environment or Degraded Visual Environments (DVE) poses major challenges in image enhancement and restoration, and object detection and classification, some of the key tasks towards the final goal of semantic scene understanding. </p>
 
-<p style="text-align: justify">If you have any questions about this challenge track please feel free to email <a style="color: #337ab7; text-decoration: underline" href="mailto:cvpr2022.ug2challenge@gmail.com">cvpr2022.ug2challenge@gmail.com</a></p>
+              <p>UG<sup>2</sup>+ Track 1 aims to evaluate and advance object detection algorithms’ robustness on images captured from hazy environmental situations. Participants are allowed to use a restoration/enhancement pre-processing step in the detection pipeline. In other words, they will not be tasked with the creation of novel object detection algorithms. A list of detection algorithms will be provided to them in order to facilitate studies of the interaction between image restoration and enhancement algorithms and the detectors. During the evaluation, the selected detection algorithms will be run on the test images. Through this challenge and benchmark, we aim to encourage more state-of-the-art single-image dehazing, haze quantification, and object detection algorithms. </p>
+
+              <p>Track 1 is based on the A2I2-Haze, the first real haze dataset with in-situ smoke measurement aligned to aerial imagery. A2I2-Haze has paired haze and haze-free imagery that will allow fine-grained evaluation of computer vision algorithms. A2I2-Haze is a result of joint collaboration with DEVCOM Army Research Laboratory, produced and measured by nonlethal smoke/obscurant munitions and generated hazy conditions in a controlled way.
+              We provide a total of 229 paired hazy/clean frame images extracted from 12 videos. A2I2-Haze is labeled with civilian vehicles, and the participating teams will be allowed to use any extra labeled/unlabeled training data is allowed. There will be 197 paired images for training and 32 reserved for final testing. </p>
+
+              <p>For more details, pleas refer to our paper: <span class="font-serif"><a href="https://arxiv.org/pdf/2206.06427.pdf" target="_blank">A2I2-Haze.pdf</a></span></p>
+
+              <div class="row">
+               <div class="column">
+                  <img height="300" width="300" src="pics/data_collection1.jpg">
+               </div>
+               <div class="column">
+                  <img height="300" width="300" src="pics/data_collection2.jpg">
+               </div>
+               <div class="column">
+                  <img height="300" width="300" src="pics/data_collection3.jpg">
+               </div>
+               <div class="column">
+                  <img height="300" width="300" src="pics/data_collection4.jpg">
+               </div>
+              </div>
+                <!-- <ol>
+                  <li>(Semi-)Supervised Object Detection in Haze Conditions</li>
+                  <li>(Semi-)Supervised Face Detection in Low Light Conditions</li>
+                </ol> -->
               
-              <p style="padding-bottom: 40px"> References:<br>
-                  [1] Mao, Z., Chimitt, N., Chan, S. H., Oct, 2021. Accelerating Atmospheric Turbulence Simulation via Learned Phase-to-Space Transform. In Proc. of IEEE/CVF International Conference on Computer Vision. pp 14759-14768<br>              </p>
+              <!-- <p style="text-align: justify; ">
+                <!-- In all two sub-challenges, the participant teams are allowed to use external training data that are not mentioned above, including self-synthesized or self-collected data; -->
+                <!-- <b>but they must state so in their submissions ("Method description" section in Codalab)</b>. -->
+                <!-- Each leaderboard will be divided into two ranking lists: with and without external data. -->
+                <!-- The ranking criteria will be the Mean average precision (mAP) on each testing set, with Interception-of-Union (IoU) threshold as 0.5. -->
+                <!-- If the ratio of the intersection of a detected region with an annotated face region is greater than 0.5, a score of 1 is assigned to the detected region, and 0 otherwise. -->
+                <!-- When mAPs with IoU as 0.5 are equal, the mAPs with higher IoUs (0.6, 0.7, 0.8) will be compared sequentially. -->
+              <!-- </p> -->
+              	<!-- <ul> -->
 
+              <p style="text-align: justify;padding-bottom: 40px">If you have any questions about this challenge track please feel free to email <a style="color: #337ab7; text-decoration: underline" href="mailto:cvpr2022.ug2challenge@gmail.com">cvpr2022.ug2challenge@gmail.com</a></p>
+              </p>
+            </p>
             </div>
           </div>
 
