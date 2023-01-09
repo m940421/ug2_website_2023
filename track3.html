@@ -84,9 +84,9 @@
         <div class="container" style="width:100%">
           <div class="row" style="padding-top: 40px">
             <div class="col-sm-6 col-sm-offset-3">
-              <p style="float: right;"><img height="300" width="300" src="pics/smoke_generator.png"></p>
-              <h2 class="module-title font-alt" style="margin: 0 0 0px">Track 1: Object Detection in Haze</h2>
-              <h3 class="module-subtitle font-serif" style="margin: 0 0 20px"><a href="https://forms.gle/8xJ1oTKddiL284rVA" target="_blank" class="section-scroll btn btn-border-w btn-round">Register for this track</a></h3>
+              <!-- <p style="float: right;"><img height="300" width="300" src="pics/smoke_generator.png"></p> -->
+              <h2 class="module-title font-alt" style="margin: 0 0 0px">Track 3: Single Image Deraining</h2>
+              <!-- <h3 class="module-subtitle font-serif" style="margin: 0 0 20px"><a href="https://forms.gle/8xJ1oTKddiL284rVA" target="_blank" class="section-scroll btn btn-border-w btn-round">Register for this track</a></h3> -->
             </div>
           </div>
         </div>
@@ -96,29 +96,12 @@
         <div class="container">
           <div class="row" style="text-align: justify">
             <div class="col-sm-12 font-nat" style="font-size: 13pt">
-              <p>Scene understanding for applications such as intelligence, surveillance, and reconnaissance (ISR) and autonomous vehicles becomes extremely challenging in adverse weather conditions such as haze, fog and mist. These atmospheric phenomena with smoke particles and minute water droplets often result in imagery with non-linear noise, blur, reduced contrast levels and color dimming issues. Thus, the on-board vision systems are significantly obscured. These visual artifacts generated from uncontrolled and potentially changing environment or Degraded Visual Environments (DVE) poses major challenges in image enhancement and restoration, and object detection and classification, some of the key tasks towards the final goal of semantic scene understanding. </p>
+              <p>Images captured in adverse weather conditions significantly impact the performance of many vision tasks. Rain is a common weather phenomenon that introduces visual degradations to captured images and videos through partial occlusions of objects – in heavy rain, severe occlusion to the background. As most vision algorithms assume clear weather, with no interference of rain, their performance suffers. Deraining is the task of removing such visual degradations so that the images are better suited to the assumptions of downstream vision algorithms, as well as for aesthetic fruition. </p>
 
-              <p>UG<sup>2</sup>+ Track 1 aims to evaluate and advance object detection algorithms’ robustness on images captured from hazy environmental situations. Participants are allowed to use a restoration/enhancement pre-processing step in the detection pipeline. In other words, they will not be tasked with the creation of novel object detection algorithms. A list of detection algorithms will be provided to them in order to facilitate studies of the interaction between image restoration and enhancement algorithms and the detectors. During the evaluation, the selected detection algorithms will be run on the test images. Through this challenge and benchmark, we aim to encourage more state-of-the-art single-image dehazing, haze quantification, and object detection algorithms. </p>
+              <p>UG<sup>2<sup>+ Track 3 aims to promote the development of novel single image deraining algorithms for real images. The competition will feature diverse and challenging scenarios that include (i) various types of rain conditions (i.e. long and short streaks, various densities and accumulation, with and without rain fog), (ii) large variety of background scenes from urban locations (i.e. buildings, streets, cityscapes) to natural scenery (i.e. forests, plains, hills), (iii) varying degrees of illumination from different times of day, and all of which are captured by (iv) cameras that cover a wide array of resolutions, noise levels, and intrinsic parameters. In a collaboration with the authors of GT-RAIN, we will introduce an additional 15 extra scenes set aside as a benchmark test set. The challenge will be split into three phases (training, validation, and testing), where data corresponding to each phase will be released to the participants. The validation set will consist of 5400 frames covering 18 scenes and the testing set 4500 frames covering 15 scenes. Unlike previous evaluation protocols that were limited to qualitative evaluation on real images, the submissions will be evaluated quantitatively using standard metrics like PSNR and SSIM. The ranking of algorithms will be determined based on evaluation scores on the testing set. The first place winner will be awarded $1000 USD, second place will be awarded $800 USD, and third place $500 USD. </p>
 
-              <p>Track 1 is based on the A2I2-Haze, the first real haze dataset with in-situ smoke measurement aligned to aerial imagery. A2I2-Haze has paired haze and haze-free imagery that will allow fine-grained evaluation of computer vision algorithms. A2I2-Haze is a result of joint collaboration with DEVCOM Army Research Laboratory, produced and measured by nonlethal smoke/obscurant munitions and generated hazy conditions in a controlled way.
-              We provide a total of 229 paired hazy/clean frame images extracted from 12 videos. A2I2-Haze is labeled with civilian vehicles, and the participating teams will be allowed to use any extra labeled/unlabeled training data is allowed. There will be 197 paired images for training and 32 reserved for final testing. </p>
+              <p>The logistics of Track 3 is handled seperately. For details regarding the datasets, rules and prizes, please check the <span class="font-serif"><a href="https://codalab.lisn.upsaclay.fr/competitions/7988" target="_blank">CodaLab Page</a></span> of the challenge. </p>
 
-              <p>For more details, pleas refer to our paper: <span class="font-serif"><a href="https://arxiv.org/pdf/2206.06427.pdf" target="_blank">A2I2-Haze.pdf</a></span></p>
-
-              <div class="row">
-               <div class="column">
-                  <img height="300" width="300" src="pics/data_collection1.jpg">
-               </div>
-               <div class="column">
-                  <img height="300" width="300" src="pics/data_collection2.jpg">
-               </div>
-               <div class="column">
-                  <img height="300" width="300" src="pics/data_collection3.jpg">
-               </div>
-               <div class="column">
-                  <img height="300" width="300" src="pics/data_collection4.jpg">
-               </div>
-              </div>
                 <!-- <ol>
                   <li>(Semi-)Supervised Object Detection in Haze Conditions</li>
                   <li>(Semi-)Supervised Face Detection in Low Light Conditions</li>
@@ -134,7 +117,7 @@
               <!-- </p> -->
               	<!-- <ul> -->
 
-              <p style="text-align: justify;padding-bottom: 40px">If you have any questions about this challenge track please feel free to email <a style="color: #337ab7; text-decoration: underline" href="mailto:cvpr2022.ug2challenge@gmail.com">cvpr2022.ug2challenge@gmail.com</a></p>
+              <p style="text-align: justify;padding-bottom: 40px">If you have any questions about this challenge track please feel free to email <a style="color: #337ab7; text-decoration: underline" href="mailto:GTRainChallenge@gmail.com">GTRainChallenge@gmail.com</a></p>
               </p>
             </p>
             </div>
