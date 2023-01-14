@@ -92,13 +92,36 @@
         </div>
       </section>
 
-      <section class="module-medium" style="padding-bottom: 0px">
+
+      <section class="module-medium" style="padding-bottom: 0px"></section>
+
+      <!-- GT-RAIN Dataset Figure -->
+      <div class="container" style="padding-bottom: 20px">
+        <figure>
+          <img src="assets/images/gtrain_samples.png" style="width:75%;height:75%;margin-left:auto;margin-right:auto;display:block;border: none;">
+          <figcaption style="width:80%;margin-left:auto;margin-right:auto;display:block;text-align: center;">
+            <em>Sample pairs from the <a href="https://visual.ee.ucla.edu/gt_rain.htm/">GT-RAIN dataset</a> [1]. </em></figcaption>
+        </figure>
+    </div>
+
+
+      
         <div class="container">
           <div class="row" style="text-align: justify">
             <div class="col-sm-12 font-nat" style="font-size: 13pt">
+              <!--
               <p>Images captured in adverse weather conditions significantly impact the performance of many vision tasks. Rain is a common weather phenomenon that introduces visual degradations to captured images and videos through partial occlusions of objects – in heavy rain, severe occlusion to the background. As most vision algorithms assume clear weather, with no interference of rain, their performance suffers. Deraining is the task of removing such visual degradations so that the images are better suited to the assumptions of downstream vision algorithms, as well as for aesthetic fruition. </p>
 
               <p>UG<sup>2</sup>+ Track 3 aims to promote the development of novel single image deraining algorithms for real images. The competition will feature diverse and challenging scenarios that include (i) various types of rain conditions (i.e. long and short streaks, various densities and accumulation, with and without rain fog), (ii) large variety of background scenes from urban locations (i.e. buildings, streets, cityscapes) to natural scenery (i.e. forests, plains, hills), (iii) varying degrees of illumination from different times of day, and all of which are captured by (iv) cameras that cover a wide array of resolutions, noise levels, and intrinsic parameters. In a collaboration with the authors of GT-RAIN, we will introduce an additional 15 extra scenes set aside as a benchmark test set. The challenge will be split into three phases (training, validation, and testing), where data corresponding to each phase will be released to the participants. The validation set will consist of 5400 frames covering 18 scenes and the testing set 4500 frames covering 15 scenes. Unlike previous evaluation protocols that were limited to qualitative evaluation on real images, the submissions will be evaluated quantitatively using standard metrics like PSNR and SSIM. The ranking of algorithms will be determined based on evaluation scores on the testing set. The first place winner will be awarded $1000 USD, second place will be awarded $800 USD, and third place $500 USD. </p>
+              -->
+
+              <p>The GT-RAIN challenge invites the public to push the boundary of single image deraining for challenging real world images degraded by various degrees of rainy weather that were collected from all around the world—stretching from North America to Asia. The competition features the first large scale dataset comprised of real rainy image and ground truth image pairs captured from over 115 scenes. The challenge is sponsored by the US Army Research Laboratory (ARL) with monetary awards for the best performing teams: $1000 USD for first place, $800 USD for second place and $500 USD for third place.</p>
+
+              <p>Single-image deraining aims to remove degradations induced by rain from images. Top performing methods use deep networks, but suffer from a common issue: it is not possible to obtain ideal real ground-truth pairs of rain and clean images. The same scene, in the same space and time, cannot be observed both with and without rain. To overcome this, deep learning based rain removal relies on synthetic data. However, current rain simulators cannot model all the complex effects of rain which leads to unwanted artifacts when applying models trained on them to real-world rainy scenes. For instance, a number of synthetic methods add rain streaks to clean images to generate the pair, but rain does not only manifest as streaks: If raindrops are further away, the streaks meld together creating rain accumulation, or veiling effects, which are exceedingly difficult to simulate. A further challenge with synthetic data is that results on real test data can only be evaluated qualitatively, for no real paired ground truth exists.</p>
+
+              <p>To address these limitations of synthetic data, the <a href="https://visual.ee.ucla.edu/gt_rain.htm/">GT-RAIN dataset</a> [1] was proposed. Unlike existing datasets, GT-RAIN consists of pairs of real rainy image and ground truth image captured moments after the rain had stopped -- the negative performance impact induced by short temporal interval is much less than that of synthetic data. Paired videos collected within a short time frame of each other are strictly filtered with objective criteria on illumination shifts, camera motions, and motion artifacts. Further correction algorithms are applied for subtle variations, such as slight movements of foliage. GT-RAIN features diverse and challenging scenarios that include (i) various types of rain conditions (i.e. long and short streaks, various densities and accumulation, with and without rain fog), (ii) large variety of background scenes from urban locations (i.e. buildings, streets, cityscapes) to natural scenery (i.e. forests, plains, hills), (iii) varying degrees of illumination from different times of day, and all of which are captured by (iv) cameras that cover a wide array of resolutions, noise levels, and intrinsic parameters.</p>
+
+              <p>The aim of this competition is to study the rainy weather phenomenon in real world scenarios and to spark innovative ideas that will further the development of single image deraining methods on real images. In a collaboration with the authors of GT-RAIN, we have further collected an additional 15 extra scenes set aside as the official benchmark competition test set where performance evaluation will computed quantitatively. As a part of the competition, each team must register on the competition website and must use the GT-RAIN dataset to train their models. Teams are open to use additional datasets to push performance, but must include details of them in a README file included in the submission to the competition.</p>
 
               <p>The logistics of Track 3 is handled seperately. For details regarding the datasets, rules and prizes, please check the <span class="font-serif"><a href="https://codalab.lisn.upsaclay.fr/competitions/7988" target="_blank">CodaLab Page</a></span> of the challenge. </p>
 
@@ -117,9 +140,10 @@
               <!-- </p> -->
               	<!-- <ul> -->
 
-              <p style="text-align: justify;padding-bottom: 40px">If you have any questions about this challenge track please feel free to email <a style="color: #337ab7; text-decoration: underline" href="mailto:GTRainChallenge@gmail.com">GTRainChallenge@gmail.com</a></p>
-              </p>
-            </p>
+              <p style="text-align: justify">If you have any questions about this challenge track please feel free to email <a style="color: #337ab7; text-decoration: underline" href="mailto:GTRainChallenge@gmail.com">GTRainChallenge@gmail.com</a></p>
+
+              <p style="padding-bottom: 40px"> References:<br>
+                [1] Ba, Y., Zhang, H., Yang, E., Suzuki, A., Pfahnl, A., Chandrappa, C.C., de Melo, C.M., You, S., Soatto, S., Wong, A. and Kadambi, A., 2022. Not Just Streaks: Towards Ground Truth for Single Image Deraining. In European Conference on Computer Vision (pp. 723-740). Springer, Cham.<br>  </p>
             </div>
           </div>
 
