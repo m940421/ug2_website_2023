@@ -81,9 +81,9 @@
         <!-- Turbulence Figure -->
         <div class="container" style="padding-bottom: 20px">
             <figure>
-              <img src="assets/images/turbulence_text_sample.png" style="width:75%;height:75%;margin-left:auto;margin-right:auto;display:block;border: none;">
+              <img src="assets/images/sample_data.jpg" style="width:75%;height:75%;margin-left:auto;margin-right:auto;display:block;border: none;">
               <figcaption style="width:80%;margin-left:auto;margin-right:auto;display:block;text-align: center;">
-                <em>Sampled frames from the turbulence text dataset. </em> </figcaption>
+                <em>Left: New text recognition data this year (sub-track 1). Right: Sample coded target data (sub-track 2) </em> </figcaption>
             </figure>
         </div>
 
@@ -116,17 +116,19 @@
                 produce near state-of-the-art performances relative to classical methods on real-world sequences. Through this challenge, we aim to bring 
                 increased attention to this problem and alleviate many aspects limiting its development in image reconstruction efforts. 
                 The participants will be asked to develop image reconstruction algorithms that targets at arbitary generic images. A state-of-the-art 
-                atmospheric turbulence simulator will be provided for the participants to generate training data. Data from other sources are also allowed 
-                to be used, but must be clearly stated in the final submissions. The submitted algorithms will be evaluated with two different tasks: </p>
+                atmospheric turbulence simulator [1] will be provided for the participants to generate training data. Data from other sources are also allowed 
+                to be used, but must be clearly stated in the final submissions. <b>This year, the challenge comes with two sub-tracks: </b></p>
 <ol>
-<li> Text Recognition through Atmospheric Turbulence. Following the previous year's success, we continue running the same challenge track with an upgraded dataset. This year, in addition to the previous long-range turbulence text dataset, we collected a new dataset (samples shown in Figure 5) with the text sequences embedded in natural images. We use the prestige images from the COCO-Text dataset and add the real-world turbulence effect using the heat chamber built at Purdue University. We also provide a sample set of validation data consisting of 20 video sequences (100 frames each). The participant's task is to improve the image quality so that the text recognition system can successfully recognize the text sequence in the restored images. The restoration results will be evaluated with the average recognition rate of 3 different text recognition systems.   </li>
-<li> Coded Target Restoration through Atmospheric Turbulence. In this challenge, the participants are asked to develop restoration algorithms that can faithfully recover a series of “coded targets” (samples shown in Figure 6) degraded by atmospheric turbulence. The coded target was patented by U.S. Army, DEVCOM, C5ISR Center, Research and Technology Integration Directorate who uses it to evaluate the performance of an electro-optic infrared (EOIR) sensor or the quality of image processing-based reconstruction algorithms. The coded target is used to measure the proportion of information retained after the image restoration is applied. The evaluation procedure using a coded target begins by generating a target by passing a “private” code word through a hashing algorithm to generate a vector of 0’s and 1’s, called a bit code. The bit code is then used to populate circles on the target. Decoding the target can be done by converting the size and positions of the circles back to a bit code, much like a QR code is read by a phone camera. The proportion of information lost due to image degradation is quantified by a figure called the “bit score,” which is the Normalized Hamming Distance between the decoded bit code and the ground truth. Decoding a pristine image of the target will yield a bit score equal to 1.0, whereas decoding a degraded target will yield a bit score between 0 and 1. The participants’ algorithms will be assessed by their ability to achieve a high bit score (i.e., more information recovered). </li>
+<li> <b>Text Recognition through Atmospheric Turbulence.</b> Following the previous year's success, we continue running the same challenge track with an upgraded dataset. We use the prestige images from the COCO-Text dataset and add the real-world turbulence effect using the heat chamber [2]. The participant's task is to improve the image quality so that the text recognition system can successfully recognize the text sequence in the restored images. </li>
+<li> <b>Coded Target Restoration through Atmospheric Turbulence.</b> In this challenge, the participants are asked to develop restoration algorithms that can faithfully recover a series of “coded targets” degraded by atmospheric turbulence. The coded target was patented by U.S. Army, DEVCOM, C5ISR Center, Research and Technology Integration Directorate. The coded target is used to measure the proportion of information retained after the image restoration is applied. The participant's task is to improve the image quality so that the infomation encoded in the target patterns can be successfully decoded. </li>
 </ol>
 
 <p style="text-align: justify">If you have any questions about this challenge track please feel free to email <a style="color: #337ab7; text-decoration: underline" href="mailto:cvpr2023.ug2challenge@gmail.com">cvpr2023.ug2challenge@gmail.com</a></p>
               
               <p style="padding-bottom: 40px"> References:<br>
-                  [1] Mao, Z., Chimitt, N., Chan, S. H., Oct, 2021. Accelerating Atmospheric Turbulence Simulation via Learned Phase-to-Space Transform. In Proc. of IEEE/CVF International Conference on Computer Vision. pp 14759-14768<br>              </p>
+                  [1] Mao, Z., Chimitt, N., Chan, S. H., Oct, 2021. Accelerating Atmospheric Turbulence Simulation via Learned Phase-to-Space Transform, In Proc. of IEEE/CVF International Conference on Computer Vision. pp 14759-14768<br>              </p>
+              <p style="padding-bottom: 40px"> References:<br>
+                  [2] Mao, Z., Jaiswal, A., Wang, Z., Chan, S. H., Oct, 2022. Single Frame Atmospheric Turbulence Mitigation: A Benchmark Study and A New Physics-Inspired Transformer Model, ECCV 2022<br>              </p>
 
             </div>
           </div>
