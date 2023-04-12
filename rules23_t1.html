@@ -162,7 +162,7 @@
  <section class="module-medium" style="padding:20px 0px 0px" id='submission'>
         <div class="container">
           <div class="row" style="text-align: justify">
-            <div class="col-sm-12 font-nat" style="font-size: 13pt">            
+<!--             <div class="col-sm-12 font-nat" style="font-size: 13pt">            
               <h3 class="module-title font-alt" style="margin: 0px; padding: 30px 0 20px">Submission Process</h3>
               <ul>
                 <li>
@@ -172,20 +172,23 @@
                 <li>Test images: downloadable April 30 ~ May 1 2022 (one-day only).</li>
               </ul>
               
-            </div>
+            </div> -->
 
             <div class="col-sm-12 font-nat" style="font-size: 13pt">            
               <h3 class="module-title font-alt" style="margin: 0px; padding: 30px 0 20px">Winner/Runner-up Validation Process</h3>
               <h3 class="module-title font-alt" style="margin: 0px; padding: 30px 0 20px; color:red"><a style="color: red; text-decoration: underline" target="_blank" href="./nvidia22.html">We appreciate the strong GPU support from NVIDIA!</a></h3>
 
-              <p style="text-align: justify;"><b>Winner and two runner-ups on leaderboard are required to submit their code for the validation</b>. Please follow steps below:</p>
+              <p style="text-align: justify;"><b>Teams with Top-5 on the final testing Codalab leaderboard would be required to submit their code for the winner 
+                validation and confirmation process. Please pack all the required items into one single .zip 
+                file and sent it (or the link) to cvpr2023.ug2challenge@gmail.com.
+                </b>. Please follow steps below:</p>
               <ol style="text-align: justify;">
-                <li>Please send us the docker image (a link to pull) by <b>May 15th EOD</b>.</li>
-                <li>The docker image needs to include <b>training and evaluation script and data</b> to fully reproduce the original submission. We'll re-train your model using your scripts. If the reproduced results differ too much from the submissions, your team will likely be disqualified.</li>
+                <li>Your code and trained weight of your model that could lead to the result shown in the learderboard. 
+                  You should also provide a script to run the testing process on the final testing stage data. 
+                  Please include any necessary instructions and requirements to run the code. We will reproduce your result using the submitted pre-trained model.</li>
                 <li>Please feel free to provide a README file as well as relevant information that might help us reproduce. Please provide instructions on how to run your training scripts as well as your testing scripts inside the docker image (using an interactive shell e.g. bash, zsh).</li>
                 <li>Please provide requirements.txt or conda environment.yml file if we need to install additional packages.</li>
-                <li>If you are not familiar with docker, you may build upon existing images e.g. <a style="color: #337ab7; text-decoration: underline" target="_blank" href="https://hub.docker.com/r/ufoym/deepo/">https://hub.docker.com/r/ufoym/deepo/</a></li>
-              </ol> -->
+              </ol>
 
               <!-- <h3 class="work-details-title font-alt">Development Kit</h3> -->
               <!-- <p style="text-align: justify;">The Development Kit consists of a Docker file containing the basic structure for the algorithm submission, as well as instructions on how to pull
@@ -201,7 +204,7 @@
                 <li>CUDA Version 11.4</li>
                 <li>NVIDIA Driver 470.103.01</li>
                 <li>Docker version 20.10.8, build 3967b7d</li>
-              </ul>
+              </ul> --!>
               <p style="text-align: justify;">If you have any questions about this challenge track please feel free to email <a style="color: #337ab7; text-decoration: underline" href="mailto:cvpr2022.ug2challenge@gmail.com">cvpr2022.ug2challenge@gmail.com</a></p>
             </div>
           </div>
